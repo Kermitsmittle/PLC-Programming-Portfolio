@@ -91,7 +91,7 @@ On Reddit, I go by **@kermitsmittle**—where I test my skills by helping others
 
 This repo is my personal lab, sandbox, and logbook—documenting how I go from blinking a virtual light… to controlling a surgical-grade HVAC system.
 
-> “Code like your panel depends on it.” – Me, halfway into a debugging spiral
+
 
 ---
 
