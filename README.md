@@ -56,7 +56,6 @@ I built this repo to:
 - Solve **community problems** with transparency
 - Grow as a future **Controls Integrator** through real feedback
 
-Also, because solving Reddit problems is like playing Sudoku… if Sudoku could electrocute you.
 
 ---
 
