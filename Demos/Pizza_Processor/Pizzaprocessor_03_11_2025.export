@@ -1,0 +1,1474 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">f48c55d1-4640-4b04-9c92-6d5533e0b6f4</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">Device</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">cdadfc2b-8598-4621-ad56-5b1df7db910f</Single>
+            </Key>
+            <Value>
+              <Single Type="{cdadfc2b-8598-4621-ad56-5b1df7db910f}" Method="IArchivable">
+                <Single Name="DeviceIdentification" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">0000 0004</Single>
+                  <Single Name="Version" Type="string">3.5.21.10</Single>
+                  <Null Name="BaseName" />
+                </Single>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">225bfe47-7336-4dbc-9419-4105a7c831fa</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638974565542243070</Single>
+      </Single>
+      <Single Name="Object" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+        <Single Name="UniqueIdGenerator" Type="string">4105</Single>
+        <Null Name="TypeList" />
+        <Single Name="NeedsBusCycle" Type="bool">False</Single>
+        <Single Name="Id" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+          <Single Name="Type" Type="int">4096</Single>
+          <Single Name="Id" Type="string">0000 0004</Single>
+          <Single Name="Version" Type="string">3.5.21.10</Single>
+          <Null Name="BaseName" />
+        </Single>
+        <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+          <Single Name="Name" Type="string">CODESYS Control Win V3 x64</Single>
+          <Single Name="Description" Type="string">CODESYS V3 Soft-PLC for Windows with non realtime capabilities (CODESYS Control Win V3 x64)</Single>
+          <Single Name="Vendor" Type="string">CODESYS</Single>
+          <Single Name="OrderNumber" Type="string">???</Single>
+          <Array Name="Categories" Type="int">ABAAAA==</Array>
+          <Array Name="Families" Type="string" />
+          <Single Name="Custom" Type="string"></Single>
+          <Null Name="DefaultInstanceName" />
+        </Single>
+        <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">eccedebb-53f4-5ff8-8f8f-227f22b2f544</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="Disable" Type="bool">False</Single>
+        <Single Name="Exclude" Type="bool">False</Single>
+        <List Name="Connectors" Type="System.Collections.ArrayList" />
+        <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+          <List Name="InnerList" Type="System.Collections.ArrayList">
+            <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+              <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Default" Type="string">Common.PCI</Single>
+              </Single>
+              <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="IsExplicit" Type="bool">False</Single>
+              <Single Name="ModuleType" Type="ushort">256</Single>
+              <Single Name="Interface" Type="string">Common.PCI</Single>
+              <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+              <Single Name="ConnectorId" Type="int">0</Single>
+              <Single Name="Hostpath" Type="int">-1</Single>
+              <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+                <List Name="Adapters" Type="System.Collections.ArrayList">
+                  <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+                    <List Name="Modules" Type="System.Collections.ArrayList" />
+                    <Single Name="MaxDevices" Type="int">2147483647</Single>
+                    <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+                  </Single>
+                </List>
+              </Single>
+              <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+                <List2 Name="Params" />
+                <Single Name="LmGuid" Type="System.Guid">38acf554-d513-58f0-b21b-81beb7e23f0c</Single>
+                <Null Name="Sections" />
+                <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+                <Single Name="AlwaysMapping" Type="bool">False</Single>
+                <Null Name="EditorName" />
+                <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+                <Single Name="CreateBitChannels" Type="bool">False</Single>
+              </Single>
+              <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+                <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+                <Null Name="RequiredTasks" />
+                <Single Name="NeedsBusCycle" Type="bool">False</Single>
+                <Single Name="BusCycleTask" Type="string"></Single>
+                <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="IoAppSet" Type="bool">False</Single>
+                <Array Name="PositionIds" Type="long">BBAAAAAAAAAFEAAAAAAAAAYQAAAAAAAA</Array>
+                <Single Name="UseSlowestTask" Type="bool">False</Single>
+                <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+                <Single Name="GenerateForceVariables" Type="bool">False</Single>
+                <Single Name="EnableDiagnosis" Type="bool">False</Single>
+                <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+                <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+                <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+                <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+                <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+                <Single Name="DeviceScanSupported" Type="bool">False</Single>
+                <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+                <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+                <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+                <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+                <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+                <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+                <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+                <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              </Single>
+              <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+              <Single Name="ModuleId" Type="int">-1</Single>
+              <Null Name="IoUpdateTask" />
+              <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+              <List Name="Constraints" Type="System.Collections.ArrayList" />
+              <Single Name="hideInStatusPage" Type="bool">False</Single>
+              <Single Name="updateAllowed" Type="bool">True</Single>
+              <Single Name="fixedInputAddress" Type="string"></Single>
+              <Single Name="fixedOutputAddress" Type="string"></Single>
+              <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+              <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+              <Single Name="InitialStatusFlag" Type="uint">1</Single>
+              <Single Name="UseBlobInitConst" Type="bool">False</Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="ConnectorGroup" Type="uint">0</Single>
+              <Array Name="AllowedPages" Type="string" />
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+              <Single Name="MaxInputSize" Type="uint">0</Single>
+              <Single Name="MaxOutputSize" Type="uint">0</Single>
+              <Single Name="MaxInOutputSize" Type="uint">0</Single>
+              <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="ClientConnectorInterface" Type="string"></Single>
+              <Single Name="ClientConnectorId" Type="int">-1</Single>
+              <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+            </Single>
+            <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+              <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Default" Type="string">SafetyInterface</Single>
+              </Single>
+              <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="IsExplicit" Type="bool">False</Single>
+              <Single Name="ModuleType" Type="ushort">769</Single>
+              <Single Name="Interface" Type="string">SafetyInterface</Single>
+              <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+              <Single Name="ConnectorId" Type="int">1</Single>
+              <Single Name="Hostpath" Type="int">-1</Single>
+              <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+                <List Name="Adapters" Type="System.Collections.ArrayList">
+                  <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+                    <List Name="Modules" Type="System.Collections.ArrayList" />
+                    <Single Name="MaxDevices" Type="int">1</Single>
+                    <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+                  </Single>
+                </List>
+              </Single>
+              <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+                <List2 Name="Params" />
+                <Single Name="LmGuid" Type="System.Guid">cd67b877-70c2-5c8b-b03c-3806cf098d28</Single>
+                <Null Name="Sections" />
+                <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+                <Single Name="AlwaysMapping" Type="bool">False</Single>
+                <Null Name="EditorName" />
+                <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+                <Single Name="CreateBitChannels" Type="bool">False</Single>
+              </Single>
+              <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+                <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+                <Null Name="RequiredTasks" />
+                <Single Name="NeedsBusCycle" Type="bool">False</Single>
+                <Single Name="BusCycleTask" Type="string"></Single>
+                <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="IoAppSet" Type="bool">False</Single>
+                <Array Name="PositionIds" Type="long">BxAAAAAAAAAIEAAAAAAAAAkQAAAAAAAA</Array>
+                <Single Name="UseSlowestTask" Type="bool">False</Single>
+                <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+                <Single Name="GenerateForceVariables" Type="bool">False</Single>
+                <Single Name="EnableDiagnosis" Type="bool">False</Single>
+                <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+                <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+                <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+                <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+                <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+                <Single Name="DeviceScanSupported" Type="bool">False</Single>
+                <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+                <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+                <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+                <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+                <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+                <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+                <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+                <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              </Single>
+              <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+              <Single Name="ModuleId" Type="int">-1</Single>
+              <Null Name="IoUpdateTask" />
+              <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+              <List Name="Constraints" Type="System.Collections.ArrayList" />
+              <Single Name="hideInStatusPage" Type="bool">False</Single>
+              <Single Name="updateAllowed" Type="bool">True</Single>
+              <Single Name="fixedInputAddress" Type="string"></Single>
+              <Single Name="fixedOutputAddress" Type="string"></Single>
+              <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+              <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+              <Single Name="InitialStatusFlag" Type="uint">1</Single>
+              <Single Name="UseBlobInitConst" Type="bool">False</Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="ConnectorGroup" Type="uint">0</Single>
+              <Array Name="AllowedPages" Type="string" />
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+              <Single Name="MaxInputSize" Type="uint">0</Single>
+              <Single Name="MaxOutputSize" Type="uint">0</Single>
+              <Single Name="MaxInOutputSize" Type="uint">0</Single>
+              <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="ClientConnectorInterface" Type="string"></Single>
+              <Single Name="ClientConnectorId" Type="int">-1</Single>
+              <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+          <Dictionary Type="System.Collections.Hashtable" Name="Attributes">
+            <Entry>
+              <Key>
+                <Single Type="string">StdCommunicationLink</Single>
+              </Key>
+              <Value>
+                <Single Type="string">True</Single>
+              </Value>
+            </Entry>
+          </Dictionary>
+        </Single>
+        <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+          <Single Name="SaveLocally" Type="bool">False</Single>
+          <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+          <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+          <Single Name="TrackingMode" Type="int">0</Single>
+          <Single Name="GatewayGuid" Type="System.Guid">2d80d4d4-68da-4ffc-816b-efb4c4d33167</Single>
+          <Single Name="Address" Type="{06bee84e-fb7b-460d-bdbc-36d334cb5380}" Method="IArchivable">
+            <Array Name="Addr" Type="{9ba826d6-fdbc-4f85-99e6-e813fdd446c4}">
+              <Single Type="{9ba826d6-fdbc-4f85-99e6-e813fdd446c4}" Method="IArchivable">
+                <Array Name="components" Type="byte">AGo=</Array>
+              </Single>
+            </Array>
+          </Single>
+          <Single Name="PromptAtLogin" Type="bool">False</Single>
+          <Single Name="SimulationMode" Type="bool">False</Single>
+          <Single Name="SecureOnlineMode" Type="bool">False</Single>
+          <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+          <Single Name="Name" Type="string">DESKTOP-Q5J7JU0</Single>
+          <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+          <Single Name="ScanInformation" Type="{03b12d85-7991-4556-8c0e-c0b3063eb6c4}" Method="IArchivable">
+            <Single Name="ScanInformationDeviceName" Type="string">DESKTOP-Q5J7JU0</Single>
+            <Single Name="ScanInformationIPAddressAndPort" Type="string"></Single>
+            <Single Name="ScanInformationTargetID" Type="string">0000 0004</Single>
+            <Single Name="ScanInformationTargetName" Type="string">CODESYS Control Win V3 x64</Single>
+            <Single Name="ScanInformationTargetType" Type="string">4096</Single>
+            <Single Name="ScanInformationTargetVendor" Type="string">CODESYS</Single>
+            <Single Name="ScanInformationTargetVersion" Type="string">3.5.21.10</Single>
+          </Single>
+          <Single Name="IsCommunicationEncrypted" Type="bool">False</Single>
+          <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">True</Single>
+        </Single>
+        <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+          <Array Name="UserBaseAddress" Type="string">
+            <Null />
+            <Null />
+            <Null />
+          </Array>
+        </Single>
+        <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList">
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">IoStandard</Single>
+              <Single Name="Vendor" Type="string">System</Single>
+              <Single Name="Version" Type="string">*</Single>
+              <Single Name="Identifier" Type="string">iostandardlib</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList" />
+              <Single Name="PlaceHolderLib" Type="string">IoStandard</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+            </Single>
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">3SLicense</Single>
+              <Single Name="Vendor" Type="string">CODESYS</Single>
+              <Single Name="Version" Type="string">0.0.0.0</Single>
+              <Single Name="Identifier" Type="string">_3S_LICENSE</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList" />
+              <Single Name="PlaceHolderLib" Type="string">3SLicense</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string">3SLicense</Single>
+            </Single>
+          </List>
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+          <Single Name="IoAppSet" Type="bool">True</Single>
+          <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">True</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="IoConfigGlobalsGuid" Type="System.Guid">d614a226-c0a3-5800-ba8f-c0bc011f4a7e</Single>
+        <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">2c08684b-4da9-5f08-8f75-82e587f33d23</Single>
+        <Single Name="IoConfigVarConfigGuid" Type="System.Guid">4b1cf2b8-145b-5a80-bcab-24a998e93fa2</Single>
+        <Single Name="IoConfigErrorPouGuid" Type="System.Guid">1544b1b1-ae50-51ef-b14e-70cdc99a1857</Single>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <Array Name="FunctionalChildren" Type="System.Guid">
+          <Single Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
+        </Array>
+        <Null Name="UserManagement" />
+        <Single Name="RightsManagement" Type="string">&lt;DeviceRightsManagement /&gt;</Single>
+        <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="HostObjectGuid" Type="System.Guid">f48c55d1-4640-4b04-9c92-6d5533e0b6f4</Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <Single Name="CreateBitChannels" Type="bool">False</Single>
+        <Null Name="AdditionalStringTable" />
+        <Null Name="OnlineHelpUrl" />
+        <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+        <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+        <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+        <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+          <List Name="InnerList" Type="System.Collections.ArrayList" />
+        </Single>
+        <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+        <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+        <Single Name="MappingPossible" Type="bool">False</Single>
+        <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+        <Null Name="PlaceholderResolution" />
+        <Null Name="RedirectedPlaceholderResolution" />
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      <Array Name="Path" Type="string" />
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">b5b10bc8-68cb-411b-afbb-bc6b4952eb5c</Single>
+        <Single Name="ParentGuid" Type="System.Guid">f48c55d1-4640-4b04-9c92-6d5533e0b6f4</Single>
+        <Single Name="Name" Type="string">Plc Logic</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long">638972491464489241</Single>
+      </Single>
+      <Single Name="Object" Type="{40b404f9-e5dc-42c6-907f-c89f4a517386}" Method="IArchivable" />
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">f48c55d1-4640-4b04-9c92-6d5533e0b6f4</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+      </Array>
+      <Single Name="Index" Type="int">0</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="ParentGuid" Type="System.Guid">b5b10bc8-68cb-411b-afbb-bc6b4952eb5c</Single>
+        <Single Name="Name" Type="string">Application</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">639b491f-5557-464c-af91-1471bac9f549</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638972491465449242</Single>
+      </Single>
+      <Single Name="Object" Type="{639b491f-5557-464c-af91-1471bac9f549}" Method="IArchivable">
+        <Single Name="DynamicMemory" Type="int">-1</Single>
+        <Single Name="DownloadContent" Type="bool">True</Single>
+        <Single Name="StopParentAppsOnException" Type="bool">False</Single>
+        <Single Name="GuidNetVarGVL" Type="System.Guid">3b6dffb0-9d72-41b3-bcf7-b54a4b760532</Single>
+        <Single Name="GuidMemSettings" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Null Name="BootAppSettings" />
+        <Single Name="OverrideTargetMemorySizes" Type="bool">False</Single>
+        <Single Name="TargetInputSize" Type="int">0</Single>
+        <Single Name="TargetOutputSize" Type="int">0</Single>
+        <Single Name="TargetMemoryize" Type="int">0</Single>
+        <Single Name="StaticSize" Type="int">0</Single>
+        <Single Name="AllowUserDefinedStaticSize" Type="bool">False</Single>
+        <Single Name="X509CommonName" Type="string"></Single>
+        <Single Name="X509EncryptionThumbprint" Type="string"></Single>
+        <Null Name="X509EncryptionThumbprints" />
+        <Single Name="SignDownloadWithX509Certificate" Type="bool">False</Single>
+        <Single Name="FirmCode" Type="uint">0</Single>
+        <Single Name="ProductCode" Type="uint">0</Single>
+        <Single Name="KeepOnParentOnlineChange" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">b5b10bc8-68cb-411b-afbb-bc6b4952eb5c</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">b2991173-67ac-43d6-b3de-5089f75eb4a4</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">Communication Manager</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">1caedd7b-69a8-429a-85f5-c5e6a3c156f4</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long">638973747570176757</Single>
+      </Single>
+      <Single Name="Object" Type="{1caedd7b-69a8-429a-85f5-c5e6a3c156f4}" Method="IArchivable" />
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">b116ffb1-8351-4ac5-9df8-95e15b7d4b6e</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">ConveyorStatus</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638973381910636477</Single>
+      </Single>
+      <Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">TYPE ConveyorStatus :
+STRUCT
+	Conveyor_ID: INT; // Conveyor number/ID
+	Speed: REAL; // Percentage of speed
+	Jam_Detected: BOOL; //Conveyor is Jammed
+	Running: BOOL;
+	
+END_STRUCT
+END_TYPE
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">b116ffb1-8351-4ac5-9df8-95e15b7d4b6e_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">10</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">6d75ee61-9837-4ffb-a599-63ec3df223d5</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">HopperStatus</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638973380637839116</Single>
+      </Single>
+      <Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">TYPE HopperStatus :
+STRUCT
+	Hopper_Id: INT; //id for each Hopper
+	Fill_Level: REAL; //percentage of hooper
+	Ingredient_ID: STRING(20); //Ingredient Name
+	Alarm_Active: BOOL; //Alarm
+	Is_Dispensing: BOOL;//Ingredient is being dispensed
+END_STRUCT
+END_TYPE
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">6d75ee61-9837-4ffb-a599-63ec3df223d5_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">10</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">056f2025-1fb3-4e7b-9a71-b0418136d2e1</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">Global_Variables</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">ffbfa93a-b94d-45fc-a329-229860183b1d</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638973382410220835</Single>
+      </Single>
+      <Single Name="Object" Type="{ffbfa93a-b94d-45fc-a329-229860183b1d}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">{attribute 'qualified_only'}
+VAR_GLOBAL
+END_VAR</Single>
+            <Single Name="LineInfoPersistence" Type="string">056f2025-1fb3-4e7b-9a71-b0418136d2e1_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Null Name="NetVarProperties" />
+        <Single Name="ParameterList" Type="bool">False</Single>
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">a708a376-8b33-494c-8206-debb75a51881</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">Library Manager</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">61a44170-da69-49a8-99a4-c61280b4559c</Single>
+            </Key>
+            <Value>
+              <Single Type="{61a44170-da69-49a8-99a4-c61280b4559c}" Method="IArchivable">
+                <Dictionary2 Name="PlaceholderResolution">
+                  <Entry>
+                    <Key>
+                      <Single Type="string">ElementCollections</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="string">Element Collections, 4.0.0.0 (CODESYS)</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary2>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">adb5cb65-8e1d-4a00-b70a-375ea27582f3</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638973807993982588</Single>
+      </Single>
+      <Single Name="Object" Type="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" Method="IArchivable">
+        <List2 Name="ParameterTable" />
+        <List Name="Items" Type="System.Collections.ArrayList">
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">IoStandard, 3.5.17.0 (System)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">IoStandard</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">1480340394</Single>
+            <Single Name="Namespace" Type="string">IoStandard</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">True</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">3SLicense, 0.0.0.0 (CODESYS)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">3SLicense</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b</Single>
+            <Single Name="Id" Type="long">3405438027</Single>
+            <Single Name="Namespace" Type="string">_3S_LICENSE</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">CAA Device Diagnosis, 3.5.21.0 (CAA Technical Workgroup)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">CAA Device Diagnosis</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">3686336930</Single>
+            <Single Name="Namespace" Type="string">DED</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">True</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">Standard, * (System)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">Standard</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">2618430361</Single>
+            <Single Name="Namespace" Type="string">Standard</Single>
+            <Single Name="SystemLibrary" Type="bool">False</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">Breakpoint Logging Functions, * (3S - Smart Software Solutions GmbH)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">BreakpointLogging</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">134632765</Single>
+            <Single Name="Namespace" Type="string">BPLog</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{51a11660-6c0d-4598-8c08-419c5845ea1f}" Method="IArchivable">
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="Name" Type="string">IecVarAccess3 Interfaces, * (System)</Single>
+            <Single Name="Id" Type="long">4204807866</Single>
+            <Single Name="Namespace" Type="string">IecVarAccess_Interfaces</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">IecVarAccess, 3.5.17.0 (System)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">IecVarAccess</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">2749838598</Single>
+            <Single Name="Namespace" Type="string">IecVarAccessLibrary</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">SymbolicVarsBase, 3.5.17.0 (System)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">SymbolicVarsBase</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">2540115292</Single>
+            <Single Name="Namespace" Type="string">SymbolicVarsBase</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{51a11660-6c0d-4598-8c08-419c5845ea1f}" Method="IArchivable">
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="Name" Type="string">CmpOPCUAStack Interfaces, * (System)</Single>
+            <Single Name="Id" Type="long">2081604330</Single>
+            <Single Name="Namespace" Type="string">CmpOPCUAStack_Interfaces</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{51a11660-6c0d-4598-8c08-419c5845ea1f}" Method="IArchivable">
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="Name" Type="string">CmpOPCUAServer Interfaces, * (System)</Single>
+            <Single Name="Id" Type="long">2785188147</Single>
+            <Single Name="Namespace" Type="string">CmpOPCUAServer_Interfaces</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{51a11660-6c0d-4598-8c08-419c5845ea1f}" Method="IArchivable">
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="Name" Type="string">IecVarAccessOpcUaMetaData Interfaces, * (System)</Single>
+            <Single Name="Id" Type="long">3171213340</Single>
+            <Single Name="Namespace" Type="string">IecVarAccessOpcUaMetaData_Interfaces</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+          <Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable">
+            <Single Name="DefaultResolution" Type="string">AlarmManagerToOpcUaConnector, 4.6.0.0 (System)</Single>
+            <Single Name="Optional" Type="bool">False</Single>
+            <Null Name="Params" />
+            <Single Name="PlaceholderName" Type="string">AlarmManagerToOpcUaConnector</Single>
+            <Single Name="ResolverGuid" Type="System.Guid">b303f5ce-75ff-4668-a777-7da8debb449c</Single>
+            <Single Name="Id" Type="long">904402389</Single>
+            <Single Name="Namespace" Type="string">AlarmManagerToOpcUaConnector</Single>
+            <Single Name="SystemLibrary" Type="bool">True</Single>
+            <Single Name="HideWhenReferencedAsDependency" Type="bool">False</Single>
+            <Single Name="PublishSymbolsInContainer" Type="bool">False</Single>
+            <Single Name="QualifiedOnly" Type="bool">False</Single>
+            <Single Name="LinkAllContent" Type="bool">False</Single>
+          </Single>
+        </List>
+        <Dictionary Type="System.Collections.Hashtable" Name="PlaceholderRedirectionTable">
+          <Entry>
+            <Key>
+              <Single Type="string">Standard</Single>
+            </Key>
+            <Value>
+              <Single Type="string">Standard, 3.5.18.0 (System)</Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="string">StringUtils</Single>
+            </Key>
+            <Value>
+              <Single Type="string">StringUtils, 3.5.20.0 (System)</Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="string">Util</Single>
+            </Key>
+            <Value>
+              <Single Type="string">Util, 3.5.21.0 (System)</Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="string">Collections</Single>
+            </Key>
+            <Value>
+              <Single Type="string">Collections, 3.5.17.0 (System)</Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">45990637-b69c-49e8-9b2e-c0c93758eb6a</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">FB_Conveyor</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638973538529082740</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">// Logic Framework
+IF Fault THEN
+	Running := FALSE;
+	Current_Speed := 0.0;
+	State := 2;
+ELSE
+	IF NOT Fault AND Start = TRUE THEN
+	   Running := TRUE;
+	   Current_Speed := Speed_Setpoint;
+	   State := 1;
+	 ELSIF NOT Start THEN 
+     	Running := FALSE;
+	    Current_Speed := 0.0;
+	    State := 0;	
+		 
+		
+		
+	END_IF
+	
+END_IF
+
+
+	
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">45990637-b69c-49e8-9b2e-c0c93758eb6a_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION_BLOCK FB_Conveyor
+VAR_INPUT
+	Start: BOOL;
+	Speed_Setpoint: REAL; //percentage in speed
+END_VAR
+VAR_OUTPUT
+	Running: BOOL; //
+	Fault: BOOL; //
+	Jam_Detected: BOOL; //
+	Current_Speed: REAL; //
+END_VAR
+
+VAR
+	State: INT; //0=Ideal, 1=running, 2=Fault
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">45990637-b69c-49e8-9b2e-c0c93758eb6a_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">129</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">8d5ee0aa-921f-4261-b7df-9ec89e21f0a7</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">FB_Hopper</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638973540037042776</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">//Hopper Control Logic
+IF StartDispense THEN
+	Status.Is_Dispensing:= TRUE;
+	Internal_State := TRUE;
+ELSIF StopDispense THEN
+	Status.Is_Dispensing:= FALSE;
+	Internal_State := FALSE;
+END_IF
+
+//Simulate Ingredient level
+IF Internal_State =1 THEN
+   Status.Fill_Level := Status.Fill_Level - 0.1; // Decrement per Order
+END_IF
+
+//Alarm Logic
+status.Alarm_Active := (status.Fill_Level &lt; 5.0);</Single>
+            <Single Name="LineInfoPersistence" Type="string">8d5ee0aa-921f-4261-b7df-9ec89e21f0a7_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION_BLOCK FB_Hopper
+VAR_INPUT
+	StartDispense: BOOL;
+	StopDispense:BOOL;
+END_VAR
+VAR_OUTPUT
+	Status:HopperStatus;
+END_VAR
+VAR Internal_State: BOOL; // False=Idle True= Dispensing
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">8d5ee0aa-921f-4261-b7df-9ec89e21f0a7_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">36</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">8148c950-a9e9-4955-8d3f-19e1921f48c2</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">Supervisor_PRG</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638972931785484241</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string"></Single>
+            <Single Name="LineInfoPersistence" Type="string">8148c950-a9e9-4955-8d3f-19e1921f48c2_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">PROGRAM Supervisor_PRG
+VAR
+	//Mode Control
+	b_Mode: BOOL; //True = Auto, False = Manual
+
+	//Status from Sensor
+	b_Hopper_Empty:ARRAY[1..5] OF BOOL; // 1=Base, 2=Toppings, 3=Oregano, 4=Chilli, 5=Box (if you treat Box similarly)
+	b_Conveyor_Jam: ARRAY [1..3] OF BOOL; //3 conveyors Jam Status
+
+	//Process Flags
+	 // Interlocks for hoppers or zones (e.g., 1=Base Hopper, 2=Toppings Hopper, etc.)
+    b_Interlock_Hopper: ARRAY[1..5] OF BOOL;  // Matches hopper indices
+    // Interlocks for conveyors
+    b_Interlock_Conveyor: ARRAY[1..3] OF BOOL;
+    // Interlocks for other zones like Heating, Packing - separate BOOLs or an array
+    b_Interlock_OtherZones: ARRAY[1..2] OF BOOL; // Example: 1=HeatingZone, 2=PackingStation
+
+
+	 // Alarm Flags
+    b_Alarm_HopperEmpty : BOOL;
+    b_Alarm_ConveyorJam : BOOL;
+	
+	
+
+    // Identifier
+    i_Jammed_Conveyor_Index : INT;    // 0 = none, else 1..n conveyor index
+    i_Empty_Hopper_Index: INT;
+    // Alarm Reset Command
+    b_Alarm_Reset_Command : BOOL;      // Command from HMI to reset alarms
+	
+		
+END_VAR</Single>
+            <Single Name="LineInfoPersistence" Type="string">8148c950-a9e9-4955-8d3f-19e1921f48c2_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">157</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">3d2f2df9-8927-4ece-8387-27ef1fda2678</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+        <Single Name="Name" Type="string">Task Configuration</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">ae1de277-a207-4a28-9efb-456c06bd52f3</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638972491535079263</Single>
+      </Single>
+      <Single Name="Object" Type="{ae1de277-a207-4a28-9efb-456c06bd52f3}" Method="IArchivable">
+        <Single Name="StackSize" Type="uint">0</Single>
+        <Single Name="UseConfigurableStackSize" Type="bool">False</Single>
+        <List Name="TaskConfigurationList" Type="{75fc8bb3-c744-4e99-b6eb-bb2796e19500}" />
+        <List Name="SystemEventList" Type="{7be1d5a4-d68c-4bc6-a7e5-e42a0ab42a09}" />
+        <Null Name="ExternalEventList" />
+        <Single Name="enum_guid" Type="System.Guid">45a1ce8d-d95a-5908-b557-72532a6b6bea</Single>
+        <Single Name="jitter_distribution_guid" Type="System.Guid">f1aa4f52-050a-5341-accc-f9bf8684f8e4</Single>
+        <Single Name="task_struct_guid" Type="System.Guid">7c953a3e-f0c7-5f31-b459-1954e336c49c</Single>
+        <Single Name="task_config_info_guid" Type="System.Guid">bf2701f1-10ec-51d1-a800-52bddc194086</Single>
+        <Single Name="task_global_vars_guid" Type="System.Guid">052bf1de-11ac-51b0-96e4-ca8a13a36c57</Single>
+        <Single Name="setup_call_pou_guid" Type="System.Guid">db2ffd08-e9fc-5742-9a3d-b8af4d1f760a</Single>
+        <Single Name="sys_setup_pou_guid" Type="System.Guid">7738ff11-ac63-57cc-ad02-654d4c3b9938</Single>
+        <Single Name="profiler_global_vars_guid" Type="System.Guid">c3c2bfc0-b578-505b-b0a3-8fbdf53e7409</Single>
+        <Single Name="profiler_init_code_guid" Type="System.Guid">5993bcc5-b8ae-5ab2-bbb7-f470999d2eea</Single>
+        <Single Name="profiler_cycle_code_guid" Type="System.Guid">ebb3a346-3b62-5c86-b591-ee3633814cc3</Single>
+        <Single Name="profiler_fb_guid" Type="System.Guid">519992aa-a056-54b7-ae51-6ebb44990f3a</Single>
+        <Single Name="profiler_method_reset_guid" Type="System.Guid">f6514bab-e008-5058-840e-04a9e756d27a</Single>
+        <Single Name="profiler_method_starttiming_guid" Type="System.Guid">7a6aa91e-12e3-5a4a-a59a-097e31f5e22c</Single>
+        <Single Name="profiler_method_stoptiming_guid" Type="System.Guid">e4c448e2-251a-517b-bba0-30fedca0f9b7</Single>
+        <Single Name="profiler_iectaskgetprofiling_guid" Type="System.Guid">9a127d56-cff9-59e6-b22e-36ecaf2d08d7</Single>
+        <Null Name="alSysEventList" />
+        <List2 Name="alTaskGroups">
+          <Single Type="{609a42d4-f974-4041-8548-f80e229ca5ed}" Method="IArchivable">
+            <Single Name="Groupname" Type="string">IEC-Tasks</Single>
+            <Single Name="Core" Type="int">-2</Single>
+            <Single Name="DefaultGroup" Type="bool">True</Single>
+            <Single Name="Editable" Type="bool">False</Single>
+          </Single>
+        </List2>
+        <Single Name="sysevents_global_vars_guid" Type="System.Guid">42b04b22-42aa-5158-8e62-2728287a87c8</Single>
+        <Single Name="sysevents_functionsblock_guid" Type="System.Guid">980f6f9a-cf1c-5cdd-abe6-4e1d6483c73d</Single>
+        <Single Name="sysevents_fbinit_method_guid" Type="System.Guid">66d748d3-d8ec-52b7-983d-eb7dfbcb0082</Single>
+        <Single Name="sysevents_fbexit_method_guid" Type="System.Guid">60c8b271-566a-5c1b-85c4-51aa80d88b11</Single>
+        <Single Name="sysevents_eventcallback_method_guid" Type="System.Guid">6a15d310-f9c4-579e-b164-b97b2acb9b74</Single>
+        <Single Name="sysevents_resetget_property_guid" Type="System.Guid">592007ad-fde6-5b5e-9c73-11b39289da07</Single>
+        <Array Name="parent_tasks" Type="System.Guid" />
+        <Single Name="device_app" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">2087742f-c1e2-4a87-859d-2f684c903b7c</Single>
+        <Single Name="ParentGuid" Type="System.Guid">b2991173-67ac-43d6-b3de-5089f75eb4a4</Single>
+        <Single Name="Name" Type="string">OPC UA Server</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">bb239915-1312-49e1-b304-fe9efd758779</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long">638973798689828898</Single>
+      </Single>
+      <Single Name="Object" Type="{bb239915-1312-49e1-b304-fe9efd758779}" Method="IArchivable">
+        <Single Name="SymbolSet" Type="{fffffff9-82a0-4545-aae4-53e71acc2d35}" Method="IArchivable" />
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">b2991173-67ac-43d6-b3de-5089f75eb4a4</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Communication Manager</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">1e187980-0ee0-43ea-89f3-3c17415a5d8b</Single>
+        <Single Name="ParentGuid" Type="System.Guid">3d2f2df9-8927-4ece-8387-27ef1fda2678</Single>
+        <Single Name="Name" Type="string">MainTask</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">98a2708a-9b18-4f31-82ed-a1465b24fa2d</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638972521056752797</Single>
+      </Single>
+      <Single Name="Object" Type="{98a2708a-9b18-4f31-82ed-a1465b24fa2d}" Method="IArchivable">
+        <Single Name="AllowEmpty" Type="bool">False</Single>
+        <Single Name="Kindoftask" Type="{38cb1f21-e463-4240-9171-f74fb561a060}">Cyclic</Single>
+        <List Name="CustomParameters" Type="{3e5ba045-1fc5-40ec-9ce7-4b62ec8ccfdf}" />
+        <List Name="IntervalParameters" Type="{3e5ba045-1fc5-40ec-9ce7-4b62ec8ccfdf}" />
+        <List Name="EventParameters" Type="{3e5ba045-1fc5-40ec-9ce7-4b62ec8ccfdf}" />
+        <List Name="ExternalEventParameters" Type="{3e5ba045-1fc5-40ec-9ce7-4b62ec8ccfdf}" />
+        <List Name="FreewheelingParameters" Type="{3e5ba045-1fc5-40ec-9ce7-4b62ec8ccfdf}" />
+        <Single Name="Priority" Type="string">1</Single>
+        <Single Name="Watchdog" Type="{97c20fcf-2c50-4dbb-8faa-06ff4f1e4275}" Method="IArchivable">
+          <Single Name="Enabled" Type="bool">False</Single>
+          <Single Name="Time" Type="{68e48988-4399-454b-ae43-e500b779c242}" Method="IArchivable">
+            <Single Name="Time" Type="string"></Single>
+            <Single Name="Unit" Type="string">ms</Single>
+          </Single>
+          <Single Name="Sensitivity" Type="string">1</Single>
+        </Single>
+        <Single Name="Interval" Type="{68e48988-4399-454b-ae43-e500b779c242}" Method="IArchivable">
+          <Single Name="Time" Type="string">t#20ms</Single>
+          <Single Name="Unit" Type="string">ms</Single>
+        </Single>
+        <Single Name="Event" Type="string"></Single>
+        <Single Name="ExternalEvent" Type="string"></Single>
+        <Single Name="TaskGuid" Type="System.Guid">f1b32526-e597-4180-8469-4c2a9aac4072</Single>
+        <Single Name="EventPOUGuid" Type="System.Guid">2edc7d3c-f0ca-4ee3-ad9e-cd68c69be104</Single>
+        <List Name="PouList" Type="{33f568bb-4a2c-48cb-a762-34cca3066d03}">
+          <Single Type="{f194d1ef-7376-42ce-a729-4a5485a97a46}" Method="IArchivable">
+            <Single Name="Name" Type="string">Supervisor_PRG</Single>
+            <Single Name="Comment" Type="string"></Single>
+          </Single>
+        </List>
+        <Single Name="Implicit" Type="bool">False</Single>
+        <Single Name="WithinSPSTimeSlicing" Type="bool">True</Single>
+        <Single Name="Core" Type="int">-1</Single>
+        <Single Name="Core2" Type="int">-2</Single>
+        <Single Name="TaskGroup" Type="string">IEC-Tasks</Single>
+        <Single Name="SynchTask" Type="string"></Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">3d2f2df9-8927-4ece-8387-27ef1fda2678</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Task Configuration</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">7adc30be-6c0f-4bd0-8fe4-ffc495c5ba75</Single>
+        <Single Name="ParentGuid" Type="System.Guid">2087742f-c1e2-4a87-859d-2f684c903b7c</Single>
+        <Single Name="Name" Type="string">IEC Symbol Publishing</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">3cda6efc-db0e-4ab2-9926-6ef9cbceea87</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long">638973839542769330</Single>
+      </Single>
+      <Single Name="Object" Type="{3cda6efc-db0e-4ab2-9926-6ef9cbceea87}" Method="IArchivable">
+        <Single Name="SymbolSet" Type="{a2c901ba-9f8f-43b4-89c9-b5bece5cb6a3}" Method="IArchivable">
+          <List2 Name="SymbolItems">
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Mode</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">1</Single>
+              <Single Name="Name" Type="string">b_Mode</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Mode</Single>
+              <Single Name="Comment" Type="string">True = Auto, False = Manual</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">ReadWrite</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Hopper_Empty</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">2</Single>
+              <Single Name="Name" Type="string">b_Hopper_Empty</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Hopper_Empty</Single>
+              <Single Name="Comment" Type="string"> 1=Base, 2=Toppings, 3=Oregano, 4=Chilli, 5=Box (if you treat Box similarly)</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">True</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Conveyor_Jam</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">3</Single>
+              <Single Name="Name" Type="string">b_Conveyor_Jam</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Conveyor_Jam</Single>
+              <Single Name="Comment" Type="string">3 conveyors Jam Status</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">True</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Alarm_HopperEmpty</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">5</Single>
+              <Single Name="Name" Type="string">b_Alarm_HopperEmpty</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Alarm_HopperEmpty</Single>
+              <Single Name="Comment" Type="string"> Alarm Flags</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Alarm_ConveyorJam</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">6</Single>
+              <Single Name="Name" Type="string">b_Alarm_ConveyorJam</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Alarm_ConveyorJam</Single>
+              <Single Name="Comment" Type="string"></Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">i_Jammed_Conveyor_Index</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">7</Single>
+              <Single Name="Name" Type="string">i_Jammed_Conveyor_Index</Single>
+              <Single Name="SymbolType" Type="string">INT</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.i_Jammed_Conveyor_Index</Single>
+              <Single Name="Comment" Type="string"> 0 = none, else 1..n conveyor index</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">INT</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">INT</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">i_Empty_Hopper_Index</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">8</Single>
+              <Single Name="Name" Type="string">i_Empty_Hopper_Index</Single>
+              <Single Name="SymbolType" Type="string">INT</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.i_Empty_Hopper_Index</Single>
+              <Single Name="Comment" Type="string"></Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">INT</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">INT</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Read</Single>
+            </Single>
+            <Single Type="{31dc8496-9150-41a8-b293-46a850261ad4}" Method="IArchivable">
+              <Single Name="VariableId" Type="{3f6f4c0a-5d84-47a8-8c43-bd06500ea50d}" Method="IArchivable">
+                <Single Name="Name" Type="string">b_Alarm_Reset_Command</Single>
+                <Single Name="DeclarationLocation" Type="{052ef3d8-7e1a-41a7-9f17-00e2a3b02d56}" Method="IArchivable">
+                  <Single Name="POUName" Type="string">Supervisor_PRG</Single>
+                  <Single Name="LibraryId" Type="string"></Single>
+                  <Single Name="ApplicationGuid" Type="System.Guid">3879bb97-663c-464d-b0b5-cb3158eb53e5</Single>
+                  <Single Name="ChecksumNoInit" Type="uint">1285493687</Single>
+                </Single>
+              </Single>
+              <Single Name="Id" Type="int">9</Single>
+              <Single Name="Name" Type="string">b_Alarm_Reset_Command</Single>
+              <Single Name="SymbolType" Type="string">BOOL</Single>
+              <Single Name="FullPath" Type="string">Supervisor_PRG.b_Alarm_Reset_Command</Single>
+              <Single Name="Comment" Type="string"> Command from HMI to reset alarms</Single>
+              <Single Name="IecType" Type="{49024f35-79fd-4141-9400-33ce135a766a}" Method="IArchivable">
+                <Single Name="IsArray" Type="bool">False</Single>
+                <Single Name="IsEnum" Type="bool">False</Single>
+                <Single Name="IsUserdefType" Type="bool">False</Single>
+                <Single Name="OriginalIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+                <Single Name="IsDummyOriginalIecType" Type="bool">False</Single>
+                <Single Name="BaseIecType" Type="{636e1f80-e297-4d71-b65d-3ba1b13e7f92}" Method="IArchivable">
+                  <Single Name="Data" Type="string">BOOL</Single>
+                </Single>
+              </Single>
+              <Single Name="AccessRights" Type="{888f0c75-f718-4773-bcab-aa93730a29f0}">Write</Single>
+            </Single>
+          </List2>
+          <Single Name="NextId" Type="int">10</Single>
+        </Single>
+        <Single Name="TypeSet" Type="{fa5b6354-258c-44a5-931f-1fd9342d2b41}" Method="IArchivable">
+          <List2 Name="TypeEntries" />
+          <Dictionary2 Name="AllEntries" />
+          <Single Name="NextId" Type="int">1</Single>
+        </Single>
+        <Single Name="UseUsermanagmentForAccessRights" Type="bool">True</Single>
+        <Single Name="NodeIdAsString" Type="bool">False</Single>
+        <Single Name="AlarmGroupSet" Type="{f6746a78-f6da-4e10-acf4-02c1596ace7e}" Method="IArchivable">
+          <List2 Name="AlarmGroupEntries" />
+        </Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">2087742f-c1e2-4a87-859d-2f684c903b7c</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Communication Manager</Single>
+        <Single Type="string">OPC UA Server</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">e36e429a-1c50-4fbd-819b-b43bb6ebc4d3</Single>
+        <Single Name="ParentGuid" Type="System.Guid">2087742f-c1e2-4a87-859d-2f684c903b7c</Single>
+        <Single Name="Name" Type="string">Symbol Set</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">3cda6efc-db0e-4ab2-9926-6ef9cbceea87</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long">638973798689748899</Single>
+      </Single>
+      <Single Name="Object" Type="{3cda6efc-db0e-4ab2-9926-6ef9cbceea87}" Method="IArchivable">
+        <Single Name="SymbolSet" Type="{a2c901ba-9f8f-43b4-89c9-b5bece5cb6a3}" Method="IArchivable">
+          <List2 Name="SymbolItems" />
+          <Single Name="NextId" Type="int">1</Single>
+        </Single>
+        <Single Name="TypeSet" Type="{fa5b6354-258c-44a5-931f-1fd9342d2b41}" Method="IArchivable">
+          <List2 Name="TypeEntries" />
+          <Dictionary2 Name="AllEntries" />
+          <Single Name="NextId" Type="int">1</Single>
+        </Single>
+        <Single Name="UseUsermanagmentForAccessRights" Type="bool">False</Single>
+        <Single Name="NodeIdAsString" Type="bool">False</Single>
+        <Single Name="AlarmGroupSet" Type="{f6746a78-f6da-4e10-acf4-02c1596ace7e}" Method="IArchivable">
+          <List2 Name="AlarmGroupEntries" />
+        </Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">2087742f-c1e2-4a87-859d-2f684c903b7c</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Communication Manager</Single>
+        <Single Type="string">OPC UA Server</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Single Name="ProfileName" Type="string">CODESYS V3.5 SP21 Patch 1</Single>
+</Single>  </StructuredView>
+</ExportFile>

@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP21 Patch 1" creationDateTime="2025-11-03T11:35:46.0292408" />
+  <contentHeader name="Pizzarocessor_28_10_2025.project" modificationDateTime="2025-10-30T21:42:08.8139206">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Device">
+        <resource name="Application">
+          <task name="MainTask" interval="PT0.02S" priority="1">
+            <pouInstance name="Supervisor_PRG" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+                <TaskSettings KindOfTask="Cyclic" Interval="t#20ms" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                  <Watchdog Enabled="false" TimeUnit="ms" Sensitivity="1" />
+                </TaskSettings>
+              </data>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>1e187980-0ee0-43ea-89f3-3c17415a5d8b</ObjectId>
+              </data>
+            </addData>
+          </task>
+          <globalVars name="Global_Variables">
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+                <Attributes>
+                  <Attribute Name="qualified_only" Value="" />
+                </Attributes>
+              </data>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>056f2025-1fb3-4e7b-9a71-b0418136d2e1</ObjectId>
+              </data>
+            </addData>
+          </globalVars>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="HopperStatus">
+                <baseType>
+                  <struct>
+                    <variable name="Hopper_Id">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">id for each Hopper</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Fill_Level">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">percentage of hooper</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Ingredient_ID">
+                      <type>
+                        <string length="20" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Ingredient Name</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Alarm_Active">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Alarm</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Is_Dispensing">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Ingredient is being dispensed</xhtml>
+                      </documentation>
+                    </variable>
+                  </struct>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>6d75ee61-9837-4ffb-a599-63ec3df223d5</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="ConveyorStatus">
+                <baseType>
+                  <struct>
+                    <variable name="Conveyor_ID">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Conveyor number/ID</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Speed">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Percentage of speed</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Jam_Detected">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Conveyor is Jammed</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Running">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                  </struct>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>b116ffb1-8351-4ac5-9df8-95e15b7d4b6e</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="Supervisor_PRG" pouType="program">
+                <interface>
+                  <localVars>
+                    <variable name="b_Mode">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">True = Auto, False = Manual</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Hopper_Empty">
+                      <type>
+                        <array>
+                          <dimension lower="1" upper="5" />
+                          <baseType>
+                            <BOOL />
+                          </baseType>
+                        </array>
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> 1=Base, 2=Toppings, 3=Oregano, 4=Chilli, 5=Box (if you treat Box similarly)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Conveyor_Jam">
+                      <type>
+                        <array>
+                          <dimension lower="1" upper="3" />
+                          <baseType>
+                            <BOOL />
+                          </baseType>
+                        </array>
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">3 conveyors Jam Status</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Interlock_Hopper">
+                      <type>
+                        <array>
+                          <dimension lower="1" upper="5" />
+                          <baseType>
+                            <BOOL />
+                          </baseType>
+                        </array>
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Matches hopper indices</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Interlock_Conveyor">
+                      <type>
+                        <array>
+                          <dimension lower="1" upper="3" />
+                          <baseType>
+                            <BOOL />
+                          </baseType>
+                        </array>
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Interlocks for conveyors</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Interlock_OtherZones">
+                      <type>
+                        <array>
+                          <dimension lower="1" upper="2" />
+                          <baseType>
+                            <BOOL />
+                          </baseType>
+                        </array>
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Example: 1=HeatingZone, 2=PackingStation</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Alarm_HopperEmpty">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Alarm Flags</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="b_Alarm_ConveyorJam">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="i_Jammed_Conveyor_Index">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> 0 = none, else 1..n conveyor index</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="i_Empty_Hopper_Index">
+                      <type>
+                        <INT />
+                      </type>
+                    </variable>
+                    <variable name="b_Alarm_Reset_Command">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Command from HMI to reset alarms</xhtml>
+                      </documentation>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>8148c950-a9e9-4955-8d3f-19e1921f48c2</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="FB_Hopper" pouType="functionBlock">
+                <interface>
+                  <inputVars>
+                    <variable name="StartDispense">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="StopDispense">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                  </inputVars>
+                  <outputVars>
+                    <variable name="Status">
+                      <type>
+                        <derived name="HopperStatus" />
+                      </type>
+                    </variable>
+                  </outputVars>
+                  <localVars>
+                    <variable name="Internal_State">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> False=Idle True= Dispensing</xhtml>
+                      </documentation>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">//Hopper Control Logic
+IF StartDispense THEN
+	Status.Is_Dispensing:= TRUE;
+	Internal_State := TRUE;
+ELSIF StopDispense THEN
+	Status.Is_Dispensing:= FALSE;
+	Internal_State := FALSE;
+END_IF
+
+//Simulate Ingredient level
+IF Internal_State =1 THEN
+   Status.Fill_Level := Status.Fill_Level - 0.1; // Decrement per Order
+END_IF
+
+//Alarm Logic
+status.Alarm_Active := (status.Fill_Level &lt; 5.0);</xhtml>
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>8d5ee0aa-921f-4261-b7df-9ec89e21f0a7</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="FB_Conveyor" pouType="functionBlock">
+                <interface>
+                  <inputVars>
+                    <variable name="Start">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Speed_Setpoint">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">percentage in speed</xhtml>
+                      </documentation>
+                    </variable>
+                  </inputVars>
+                  <outputVars>
+                    <variable name="Running">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Fault">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Jam_Detected">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Current_Speed">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                  </outputVars>
+                  <localVars>
+                    <variable name="State">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">0=Ideal, 1=running, 2=Fault</xhtml>
+                      </documentation>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">// Logic Framework
+IF Fault THEN
+	Running := FALSE;
+	Current_Speed := 0.0;
+	State := 2;
+ELSE
+	IF NOT Fault AND Start = TRUE THEN
+	   Running := TRUE;
+	   Current_Speed := Speed_Setpoint;
+	   State := 1;
+	 ELSIF NOT Start THEN 
+     	Running := FALSE;
+	    Current_Speed := 0.0;
+	    State := 0;	
+		 
+		
+		
+	END_IF
+	
+END_IF
+
+
+	
+</xhtml>
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>45990637-b69c-49e8-9b2e-c0c93758eb6a</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+              <Libraries>
+                <Library Name="#IoStandard" Namespace="IoStandard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="true" DefaultResolution="IoStandard, 3.5.17.0 (System)" />
+                <Library Name="#3SLicense" Namespace="_3S_LICENSE" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="3SLicense, 0.0.0.0 (CODESYS)" ResolverGuid="97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b" />
+                <Library Name="#CAA Device Diagnosis" Namespace="DED" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="CAA Device Diagnosis, 3.5.21.0 (CAA Technical Workgroup)" />
+                <Library Name="#Standard" Namespace="Standard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Standard, * (System)" />
+                <Library Name="#BreakpointLogging" Namespace="BPLog" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="Breakpoint Logging Functions, * (3S - Smart Software Solutions GmbH)" />
+                <Library Name="IecVarAccess3 Interfaces, * (System)" Namespace="IecVarAccess_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="#IecVarAccess" Namespace="IecVarAccessLibrary" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="IecVarAccess, 3.5.17.0 (System)" />
+                <Library Name="#SymbolicVarsBase" Namespace="SymbolicVarsBase" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="SymbolicVarsBase, 3.5.17.0 (System)" />
+                <Library Name="CmpOPCUAStack Interfaces, * (System)" Namespace="CmpOPCUAStack_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="CmpOPCUAServer Interfaces, * (System)" Namespace="CmpOPCUAServer_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="IecVarAccessOpcUaMetaData Interfaces, * (System)" Namespace="IecVarAccessOpcUaMetaData_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="#AlarmManagerToOpcUaConnector" Namespace="AlarmManagerToOpcUaConnector" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="AlarmManagerToOpcUaConnector, 4.6.0.0 (System)" />
+                <PlaceholderRedirections>
+                  <PlaceholderRedirection Placeholder="Standard" Redirection="Standard, 3.5.18.0 (System)" />
+                  <PlaceholderRedirection Placeholder="StringUtils" Redirection="StringUtils, 3.5.20.0 (System)" />
+                  <PlaceholderRedirection Placeholder="Util" Redirection="Util, 3.5.21.0 (System)" />
+                  <PlaceholderRedirection Placeholder="Collections" Redirection="Collections, 3.5.17.0 (System)" />
+                </PlaceholderRedirections>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>a708a376-8b33-494c-8206-debb75a51881</ObjectId>
+                  </data>
+                </addData>
+              </Libraries>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>3879bb97-663c-464d-b0b5-cb3158eb53e5</ObjectId>
+            </data>
+          </addData>
+        </resource>
+        <addData>
+          <data name="Device" handleUnknown="discard">
+            <Device xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+              <DeviceType>
+                <DeviceIdentification>
+                  <Type>4096</Type>
+                  <Id>0000 0004</Id>
+                  <Version>3.5.21.10</Version>
+                </DeviceIdentification>
+                <Connector moduleType="256" interface="Common.PCI" connectorId="0">
+                  <HostParameterSet />
+                </Connector>
+                <Connector moduleType="769" interface="SafetyInterface" connectorId="1">
+                  <HostParameterSet />
+                </Connector>
+                <DeviceParameterSet />
+              </DeviceType>
+            </Device>
+          </data>
+          <data name="configurations" handleUnknown="discard">
+            <configurations />
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>f48c55d1-4640-4b04-9c92-6d5533e0b6f4</ObjectId>
+          </data>
+        </addData>
+      </configuration>
+    </configurations>
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="Device" ObjectId="f48c55d1-4640-4b04-9c92-6d5533e0b6f4">
+          <Object Name="Application" ObjectId="3879bb97-663c-464d-b0b5-cb3158eb53e5">
+            <Object Name="Library Manager" ObjectId="a708a376-8b33-494c-8206-debb75a51881" />
+            <Object Name="Supervisor_PRG" ObjectId="8148c950-a9e9-4955-8d3f-19e1921f48c2" />
+            <Object Name="MainTask" ObjectId="1e187980-0ee0-43ea-89f3-3c17415a5d8b" />
+            <Object Name="Global_Variables" ObjectId="056f2025-1fb3-4e7b-9a71-b0418136d2e1" />
+            <Object Name="HopperStatus" ObjectId="6d75ee61-9837-4ffb-a599-63ec3df223d5" />
+            <Object Name="ConveyorStatus" ObjectId="b116ffb1-8351-4ac5-9df8-95e15b7d4b6e" />
+            <Object Name="FB_Hopper" ObjectId="8d5ee0aa-921f-4261-b7df-9ec89e21f0a7" />
+            <Object Name="FB_Conveyor" ObjectId="45990637-b69c-49e8-9b2e-c0c93758eb6a" />
+          </Object>
+        </Object>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>
