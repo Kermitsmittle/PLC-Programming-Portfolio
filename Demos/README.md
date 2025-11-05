@@ -1,1 +1,86 @@
-# Demo Projects – Work in Progress\n\nThis directory contains a sandbox of automation demo projects developed using Structured Text (IEC 61131-3) within the CODESYS V3.5 environment.\n\nThese modular, simulation-ready projects focus on real-world automation logic implemented with:\n\n- Function Blocks & STRUCTs\n- Sequencing logic\n- Timers, counters, and interlocks\n- Visualization components where applicable\n\nEach demo starts as a simple concept but illustrates the complexity of real industrial automation problems when scaled.\n\n---\n\n## Demo Index\n\n### 1. Bin Tipper Automation (/conveyor-bin-tipper)\nA fully simulated bin handling and tipping system utilizing three conveyors, sensors, and a stepper motor. Originating from a Reddit thread, this is the first major demo showcasing modular conveyor control logic.\n\nFeatures include:\n- Conveyor sequencing with deliberate delays\n- Sensor-triggered logical operations\n- Stepper motor pulse and direction control\n- Clean modular architecture based on Function Blocks and STRUCTs\n- Suitable for beginners wanting practical ST examples\n\nIncludes:\n- Complete CODESYS project files\n- Simulation setup details\n- Detailed code commentary\n\n---\n\n### 2. HVAC Surgery Room Automation (/hvac-surgery-room)\nA comprehensive, exam-level simulation of a hospital HVAC system managing airflow, pressure, and environment across multiple surgery rooms.\n\nHighlights:\n- PID control loops for temperature and pressure regulation\n- Multi-zone environmental sensor integration\n- Robust safety interlocks and alarm systems\n- Expandable and scalable control strategy\n- Real-world relevance to critical medical facilities\n\nPlanned Contents (soon):\n- Full PLC program architecture\n- I/O simulation mapping\n- Design and logic commentary\n\n---\n\n## Upcoming Projects\n\n- Conveyor Safety System\n- Multi-floor Lift Control\n- Industrial Washing Line Automation\n\nEach future demo will feature:\n- Wiring logic schematics\n- Functional programming breakdowns\n- Visualizations when applicable\n- Design rationale and reflections\n\n---\n\n## Collaboration and Challenges\n\nIf you have an automation challenge or improvement suggestion, feel free to open an issue or message me on GitHub. Collaborative problem solving is encouraged.\n\n---\n\n*Note: All projects are works in progress and will be updated regularly with new features, documentation, and refinements.*\n"# PLC & Industrial Automation Demo Projects – Nathanael K Binu (@kermitsmittle
+# Demo Projects – Work in Progress
+
+This directory contains a sandbox of automation demo projects developed using Structured Text (IEC 61131-3) within the CODESYS V3.5 environment.
+
+These modular, simulation-ready projects focus on real-world automation logic implemented with:
+
+- Function Blocks & STRUCTs
+
+- Sequencing logic
+
+- Timers, counters, and interlocks
+
+- Visualization components where applicable
+
+Each demo starts as a simple concept but illustrates the complexity of real industrial automation problems when scaled.
+
+# Demo Index
+
+## Bin Tipper Automation (/conveyor-bin-tipper)
+A fully simulated bin handling and tipping system utilizing three conveyors, sensors, and a stepper motor. Originating from a Reddit thread, this is the first major demo showcasing modular conveyor control logic.
+
+### Features include:
+
+- Conveyor sequencing with deliberate delays
+
+- Sensor-triggered logical operations
+
+- Stepper motor pulse and direction control
+
+- Clean modular architecture based on Function Blocks and STRUCTs
+
+Suitable for beginners wanting practical ST examples
+
+### Includes:
+
+- Complete CODESYS project files
+
+- Simulation setup details
+
+- Detailed code commentary
+
+## HVAC Surgery Room Automation (/hvac-surgery-room)
+A comprehensive, exam-level simulation of a hospital HVAC system managing airflow, pressure, and environment across multiple surgery rooms.
+
+### Highlights:
+
+- PID control loops for temperature and pressure regulation
+
+- Multi-zone environmental sensor integration
+
+- Robust safety interlocks and alarm systems
+
+- Expandable and scalable control strategy
+
+Re  al-world relevance to critical medical facilities
+
+#### Planned Contents (soon):
+
+- Full PLC program architecture
+
+- I/O simulation mapping
+
+- Design and logic commentary
+
+- Upcoming Projects
+
+- Conveyor Safety System
+
+- Multi-floor Lift Control
+
+- Industrial Washing Line Automation
+
+- Each future demo will feature:
+
+- Wiring logic schematics
+
+- Functional programming breakdowns
+
+- Visualizations when applicable
+
+- Design rationale and reflections
+
+- Collaboration and Challenges
+
+If you have an automation challenge or improvement suggestion, feel free to open an issue or message me on GitHub. Collaborative problem solving is encouraged.
+
