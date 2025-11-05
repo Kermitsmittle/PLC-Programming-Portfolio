@@ -1,105 +1,80 @@
-# 🧠 PLC Programming Portfolio – Nathanael K Binu (@kermitsmittle)
+# PLC & Industrial Automation Portfolio – Nathanael K Binu (@kermitsmittle)
+This repository documents my journey into industrial automation and control systems development, with a primary focus on Structured Text (ST) and the CODESYS V3 platform. My work spans foundational logic, process simulations, and real-world automation applications across multiple domains.
 
-Welcome to my PLC Programming Portfolio! This repo documents my journey into the world of industrial automation and control systems, with a laser focus on **Structured Text (ST)** and the **CODESYS V3** platform.
+# Overview
+Starting from basic timers, counters, and relay logic, my portfolio now includes scalable process control solutions such as HVAC systems, pizza manufacturing lines, and integration with SCADA platforms like VTScada and Ignition. My ultimate goal is to create a comprehensive automation ecosystem that extends across hardware, software, visualization, and cloud layers.
 
-From humble timer projects to a full-scale HVAC simulation—and a bunch of Reddit rabbit-hole problems in between—this portfolio shows what I’ve built, broken, debugged, and improved.
+# Tools and Environment
+IDE: CODESYS Development System V3
 
----
+Runtime: CODESYS Control Win
 
-## ⚙️ Tools & Environment
+Communication: CODESYS Gateway
 
-- 🧠 **IDE**: CODESYS Development System V3  
-- 💻 **Runtime**: CODESYS Control Win  
-- 🔄 **Comms**: CODESYS Gateway  
-- 🎮 **Testing**: Simulation Mode  
-- 🧾 **Language**: Structured Text (IEC 61131-3)
+Simulation: Testing via Simulation Mode
 
----
+Programming Language: Structured Text (IEC 61131-3)
 
-## 📚 Project Categories
+# Project Categories and Progress
+## Timers & Basic Control Logic
+Implementation of timers (TON, TOF, TP), counters, and relay logic
 
-### 🔹 Timers & Basics
-Fundamental control logic examples using:
-- `TON` – On-Delay Timer
-- `TOF` – Off-Delay Timer
-- `TP` – Pulse Timer
-- `CTU` / `CTD` – Counters
-- Bit logic and relay simulations
+Core control logic verified through simulation
 
-### 🔹 Reddit Practice Problems
-Real-world logic puzzles & “what-would-you-do” scenarios from Reddit’s automation community:
-- All problems documented
-- Solutions explained with comments
-- Simulated if possible
+## Reddit Practice Problems
+Documented solutions to real-world control problems sourced from Reddit communities
 
-### 🔹 Mini Applications
-Bite-sized demos showcasing:
-- Arithmetic & comparison logic
-- Rising/falling edge detection
-- Flip-flop implementations
-- PID controller mockups
+Scenario-based logic development with comments and simulation demonstrations
 
-### 🔹 HVAC Project (Main Demo)
-Simulation of a hospital HVAC system that handles 16–20 surgeries per day:
-- Modular Function Blocks for AHUs, chillers, sensors
-- Mode control: Manual/Auto
-- Fault detection & alarms
-- Designed for scalability and reuse
+### Mini Applications
+Arithmetic, comparison, edge detection, flip-flops, PID mockups
 
----
+Modular and reusable code structures
 
-## 🔥 Why This Exists
+## HVAC System Simulation
+Developed a hospital-grade HVAC system capable of managing 16–20 surgeries/day
+Modular Function Blocks for AHUs, chillers, sensors, fault detection, alarms, and scalability for future expansion
 
-I built this repo to:
-- Track my **learning** with real, working code
-- Reinforce **industry-ready practices** (naming, comments, structure)
-- Solve **community problems** with transparency
-- Grow as a future **Controls Integrator** through real feedback
+Designed for robustness and reusability across different applications
 
+## Pizza Manufacturing System
+Currently developing a scalable pizza processing line with PLC control logic
 
----
+Focus on conveyor control, hydraulic presses, oven control, and integration with visualization tools like OPEN INDUSTRY PROJECT
 
-## 🚀 Getting Started
+## SCADA & HMI Integration
+Planning and initial development for visualization using VTScada and Ignition platforms
+Focus on real-time process monitoring, control, and data logging
+Enterprise & Edge Technologies
+Future integration of Node-RED, Edge computing, and Cloud-based data management
+Strategies for remote monitoring and controlling industrial assets at scale
 
-1. Install [CODESYS V3](https://www.codesys.com/download.html)
-2. Clone this repo
-3. Open the desired project folder in CODESYS
-4. Set device to "CODESYS Control Win (V3)"
-5. Hit **Login**, **Download**, and run the simulation
+# Future Plans
+Complete the Pizza Manufacturing system and validate its control logic
+Implement BIN dropping logic as a Reddit-inspired problem
+Expand HVAC control into fault-tolerant, scalable architectures
+Develop comprehensive SCADA dashboards for real-time monitoring
+Integrate with Node-RED, Edge, and Cloud platforms for full IoT/IIoT deployment
+Explore industrial communication protocols like Modbus TCP/Ethernet
 
-Test tags and logic are commented in each program for easy understanding.
+# Why This Exists
+This portfolio acts as my technical log, learning resource, and showcase for my capabilities as a future Controls Engineer. It reflects ongoing growth—applying industry best practices, solving complex problems, and bridging hardware with visualization and cloud interfaces.
 
----
+Getting Started
+Install CODESYS V3
 
-## 📈 Roadmap
+Clone this repository
 
-- ✅ Build TON/TOF examples  
-- ⏳ Add Reddit solutions with Markdown explanations  
-- 🔁 Add sequence logic and counter libraries  
-- 🏥 Create reusable Function Blocks for HVAC logic  
-- 📦 Publish custom libraries for timers/PIDs  
-- 🔐 Explore Modbus TCP & Ethernet protocols  
-- 🖥️ Simulate with basic HMI elements (optional stretch goal)
+Open the desired project folder in CODESYS
 
----
+Configure the device (typically "CODESYS Control Win (V3)")
 
-## 👨‍💻 About the Author
+Download and run the simulation to explore the control logic and process models
 
-Hey there! I’m **Nathanael K. Binu**, a PLC programming enthusiast, structured-text maximalist, and future Controls Engineer.  
-On Reddit, I go by **@kermitsmittle**—where I test my skills by helping others (and stealing their bugs to learn from).
+Feedback & Contributions
+If you find bugs, have improvement suggestions, or innovative ideas to incorporate, please open an issue or share insights on r/PLC. Collaboration and knowledge-sharing are highly encouraged.
 
-This repo is my personal lab, sandbox, and logbook—documenting how I go from blinking a virtual light… to controlling a surgical-grade HVAC system.
+Final Note
+This portfolio is a work-in-progress—a sandbox where I integrate new layers of automation, visualization, and systems thinking. It demonstrates my commitment to evolving from basic control logic to a full-stack industrial automation engineer.
 
-
-
----
-
-## 🙌 Got Feedback?
-
-If you found a bug, want to suggest a better way to handle timers, or just have a cool Reddit problem to tackle—open an issue or drop it on [r/PLC](https://www.reddit.com/r/PLC/). I'm always down to learn more or break things together.
-
----
-
-### 🌟 Star this repo if:
-- You're learning CODESYS or ST  
-- You like nerdy portfolios  
+Would you like me to prepare a markdown file for download, or is this ready for you to copy as is?
