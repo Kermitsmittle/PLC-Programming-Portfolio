@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP21 Patch 1" creationDateTime="2025-11-18T11:47:58.0390156" />
+  <contentHeader name="Pizzarpocessor_03_11_2025.project" modificationDateTime="2025-11-12T10:55:39.9225124">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Device">
+        <resource name="Application">
+          <task name="MainTask" interval="PT0.02S" priority="1">
+            <pouInstance name="Supervisor_PRG" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+                <TaskSettings KindOfTask="Cyclic" Interval="t#20ms" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                  <Watchdog Enabled="false" TimeUnit="ms" Sensitivity="1" />
+                </TaskSettings>
+              </data>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>1e187980-0ee0-43ea-89f3-3c17415a5d8b</ObjectId>
+              </data>
+            </addData>
+          </task>
+          <task name="DatasourcesTask" interval="PT0.05S" priority="31">
+            <pouInstance name="Datasources.Datasources_PRG" typeName="">
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+              </documentation>
+            </pouInstance>
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/tasksettings" handleUnknown="implementation">
+                <TaskSettings KindOfTask="Cyclic" Interval="50" IntervalUnit="ms" WithinSPSTimeSlicing="true">
+                  <Watchdog Enabled="false" TimeUnit="ms" />
+                </TaskSettings>
+              </data>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>246b4b49-ec12-43a6-b94c-882a3af539b1</ObjectId>
+              </data>
+            </addData>
+          </task>
+          <globalVars name="Global_Variables">
+            <addData>
+              <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+                <Attributes>
+                  <Attribute Name="qualified_only" Value="" />
+                </Attributes>
+              </data>
+              <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                <ObjectId>056f2025-1fb3-4e7b-9a71-b0418136d2e1</ObjectId>
+              </data>
+            </addData>
+          </globalVars>
+          <addData>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="HopperState">
+                <baseType>
+                  <enum>
+                    <values>
+                      <value name="OFF" />
+                      <value name="IDLE" />
+                      <value name="DISPENSING" />
+                      <value name="LOW_LEVEL_FAULT" />
+                      <value name="BLOCKED" />
+                      <value name="MANUAL" />
+                    </values>
+                  </enum>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>6d75ee61-9837-4ffb-a599-63ec3df223d5</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="ConveyorStatus">
+                <baseType>
+                  <struct>
+                    <variable name="Conveyor_ID">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Conveyor number/ID</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Speed">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Percentage of speed</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Running">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="State">
+                      <type>
+                        <derived name="ConveyorState" />
+                      </type>
+                    </variable>
+                    <variable name="Ready">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Interlock</xhtml>
+                      </documentation>
+                    </variable>
+                  </struct>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>b116ffb1-8351-4ac5-9df8-95e15b7d4b6e</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="HopperStatus">
+                <baseType>
+                  <struct>
+                    <variable name="Hopper_Id">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Hopper Location/ID</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="State">
+                      <type>
+                        <derived name="HopperState" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">HopperState refering to ENUM</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Fill_Level">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Hopper_Ingredient level</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Ingredient_ID">
+                      <type>
+                        <INT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Ingredient Name or Ingredient ID</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Alarm_Active">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Alarm Status</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Ready">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Interlock</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="StartCount">
+                      <type>
+                        <DINT />
+                      </type>
+                    </variable>
+                    <variable name="LastFaultCode">
+                      <type>
+                        <INT />
+                      </type>
+                    </variable>
+                    <variable name="Timestamp">
+                      <type>
+                        <TIME />
+                      </type>
+                    </variable>
+                  </struct>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>7e38909b-e1dc-421f-b287-1db3b520bd81</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="ConveyorState">
+                <baseType>
+                  <enum>
+                    <values>
+                      <value name="OFF" />
+                      <value name="IDLE" />
+                      <value name="ON" />
+                      <value name="JAM_FAULT" />
+                      <value name="MANUAL" />
+                    </values>
+                  </enum>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>b19afefc-9fde-4bbe-b62f-e0dfa80fa76a</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="VFDStatus">
+                <baseType>
+                  <struct>
+                    <variable name="VFD_ID">
+                      <type>
+                        <string length="20" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Identification</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="State">
+                      <type>
+                        <derived name="VFDState" />
+                      </type>
+                    </variable>
+                    <variable name="SpeedSetpoint_Percentage">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Speed</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Speed_Actual">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="Speedactual_Hz">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="IsRunning">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Status</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="IsAtSpeed">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Ready">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Alarm_Active">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Alarms</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="LastFault_Code">
+                      <type>
+                        <INT />
+                      </type>
+                    </variable>
+                    <variable name="Interlock_REason">
+                      <type>
+                        <string length="50" />
+                      </type>
+                    </variable>
+                    <variable name="StartCount">
+                      <type>
+                        <UDINT />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Counters</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="RunTime_Hours">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="Current">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Hardware_DATA</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Torque_Percentage">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="Comm_OK">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">Comms</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Comms_Fault_Code">
+                      <type>
+                        <INT />
+                      </type>
+                    </variable>
+                    <variable name="TimeStamp">
+                      <type>
+                        <TIME />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">TimeStamp</xhtml>
+                      </documentation>
+                    </variable>
+                  </struct>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>4190acd9-7c47-43db-9ee8-4d24d9f1edbb</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/datatype" handleUnknown="implementation">
+              <dataType name="VFDState">
+                <baseType>
+                  <enum>
+                    <values>
+                      <value name="Starting" />
+                      <value name="Running" />
+                      <value name="Stopping" />
+                      <value name="Stopped" />
+                      <value name="Idle" />
+                      <value name="Fault" />
+                      <value name="E_Stop" />
+                    </values>
+                  </enum>
+                </baseType>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/enumvaluedocumentation" handleUnknown="implementation">
+                    <EnumValueDocumentation>
+                      <EnumValue>
+                        <Name>Starting</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Ramp-up Phase</xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>Running</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Normal operation</xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>Stopping</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Controlled deceleration</xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>Stopped</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> VFD Stopped </xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>Idle</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml">VFD Powered but not running </xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>Fault</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> VFD in Fault State</xhtml>
+                        </Documentation>
+                      </EnumValue>
+                      <EnumValue>
+                        <Name>E_Stop</Name>
+                        <Documentation>
+                          <xhtml xmlns="http://www.w3.org/1999/xhtml"> E-Stop Condition</xhtml>
+                        </Documentation>
+                      </EnumValue>
+                    </EnumValueDocumentation>
+                  </data>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>0b675403-50b0-4863-8c8b-92e0c5b027d1</ObjectId>
+                  </data>
+                </addData>
+              </dataType>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="Supervisor_PRG" pouType="program">
+                <interface>
+                  <localVars>
+                    <variable name="PID">
+                      <type>
+                        <derived name="PID" />
+                      </type>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">PID(KP:=1,SET_POINT:=1,ACTUAL:=1,TN:=1,TV:=1);
+	</xhtml>
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>8148c950-a9e9-4955-8d3f-19e1921f48c2</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="FB_Hopper" pouType="functionBlock">
+                <interface>
+                  <inputVars>
+                    <variable name="StartDispense">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="StopDispense">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="ResetFault">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="UpstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="DownstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="SimMode">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                  </inputVars>
+                  <outputVars>
+                    <variable name="Status">
+                      <type>
+                        <derived name="HopperStatus" />
+                      </type>
+                    </variable>
+                  </outputVars>
+                  <localVars>
+                    <variable name="Timer_LowLevel">
+                      <type>
+                        <derived name="TON" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> timer for low level fault</xhtml>
+                      </documentation>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">
+// Main State Machine
+CASE Status.State OF
+	
+    HopperState.OFF:
+        IF UpstreamReady AND DownstreamReady THEN
+            Status.State := HopperState.IDLE;
+        END_IF
+
+    HopperState.IDLE:
+        Status.Ready := Status.Fill_Level &gt; 10.0 AND NOT Status.Alarm_Active;
+        IF StartDispense AND Status.Ready THEN
+            Status.State := HopperState.DISPENSING;
+            Status.StartCount := Status.StartCount + 1;
+        END_IF
+        IF Status.Fill_Level &lt; 5.0 THEN
+            Status.State := HopperState.LOW_LEVEL_FAULT;
+        END_IF
+
+    HopperState.DISPENSING:
+        IF SimMode THEN
+            Status.Fill_Level := Status.Fill_Level - 0.1; // simulate use
+        END_IF
+        IF StopDispense THEN
+            Status.State := HopperState.IDLE;
+        END_IF
+        IF Status.Fill_Level &lt; 5.0 THEN
+            Status.State := HopperState.LOW_LEVEL_FAULT;
+        END_IF
+
+    HopperState.LOW_LEVEL_FAULT:
+        Status.Alarm_Active := TRUE;
+        Status.LastFaultCode := 101; // code for low level fault
+        IF ResetFault AND Status.Fill_Level &gt; 10.0 THEN
+            Status.Alarm_Active := FALSE;
+            Status.State := HopperState.IDLE;
+        END_IF
+
+    HopperState.BLOCKED:
+        // implement other block conditions (e.g., jammed/fault inputs)
+        IF ResetFault THEN
+            Status.State := HopperState.IDLE;
+        END_IF
+    HopperState.MANUAL:    // In MANUAL, the operator can force DISPENSING or IDLE
+        IF StartDispense THEN  
+            Status.State := HopperState.DISPENSING;
+        ELSIF StopDispense THEN
+	          Status.State := HopperState.IDLE;
+        END_IF
+
+    // Interlock: even in manual, block if safety is lost
+    IF NOT UpstreamReady OR NOT DownstreamReady THEN
+        Status.State := HopperState.BLOCKED;
+    END_IF
+
+END_CASE
+
+// Diagnostic update
+Status.Timestamp := TIME(); // update time on every scan</xhtml>
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>8d5ee0aa-921f-4261-b7df-9ec89e21f0a7</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="FB_Conveyor" pouType="functionBlock">
+                <interface>
+                  <inputVars>
+                    <variable name="Start">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Stop">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="ResetFault">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="UpstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="DownstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="SimMode">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="Speed_Setpoint">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml">percentage in speed</xhtml>
+                      </documentation>
+                    </variable>
+                  </inputVars>
+                  <outputVars>
+                    <variable name="Current_Speed">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="Status">
+                      <type>
+                        <derived name="ConveyorStatus" />
+                      </type>
+                    </variable>
+                  </outputVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml">IF NOT UpstreamReady OR NOT DownstreamReady THEN
+    Status.State := ConveyorState.JAM_FAULT;
+ELSE
+    CASE Status.State OF
+        ConveyorState.OFF:
+            Status.Running := FALSE;
+            Current_Speed := 0.0;
+            Status.Ready := FALSE;
+            IF UpstreamReady AND DownstreamReady THEN
+                Status.State := ConveyorState.IDLE;
+            END_IF
+
+        ConveyorState.IDLE:
+            Status.Running := FALSE;
+            Current_Speed := 0.0;
+            Status.Ready := TRUE;
+            IF Start THEN
+                Status.State := ConveyorState.ON;
+            END_IF
+
+        ConveyorState.ON:
+            Status.Running := TRUE;
+            Current_Speed := Speed_Setpoint;
+            Status.Speed := Speed_Setpoint;
+            Status.Ready := TRUE;
+            IF Stop THEN
+                Status.State := ConveyorState.OFF;
+            END_IF
+
+        ConveyorState.JAM_FAULT:
+            Status.Running := FALSE;
+            Current_Speed := 0.0;
+            Status.Ready := FALSE;
+            IF ResetFault THEN
+                Status.State := ConveyorState.IDLE;
+            END_IF
+
+        ConveyorState.MANUAL:
+            IF Start THEN
+                Status.State := ConveyorState.ON;
+            ELSIF Stop THEN
+                Status.State := ConveyorState.OFF;
+            END_IF
+    END_CASE
+END_IF
+</xhtml>
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>45990637-b69c-49e8-9b2e-c0c93758eb6a</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/pou" handleUnknown="implementation">
+              <pou name="FB_VFD" pouType="functionBlock">
+                <interface>
+                  <inputVars>
+                    <variable name="SpeedSetpoint_Percent">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Speed setpoint (0-100%)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="DirectionForward">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TRUE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> TRUE=Forward, FALSE=Reverse</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="LidClosed">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TRUE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Door/Lid interlock (mixer)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="UpstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TRUE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Upstream equipment ready</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="DownstreamReady">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TRUE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Downstream equipment ready</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="EmergencyStop">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="FALSE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> E-stop signal</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="SimMode">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="FALSE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Simulation (like Hopper's SimMode)</xhtml>
+                      </documentation>
+                    </variable>
+                  </inputVars>
+                  <outputVars>
+                    <variable name="Status">
+                      <type>
+                        <derived name="VFDStatus" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Status (like Hopper.Status)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="OUT_Run">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Run command</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="OUT_Forward">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Forward direction</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="OUT_Reverse">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Reverse direction</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="OUT_SpeedReference">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Speed reference (0-100%)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="OUT_FaultReset">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Fault reset pulse</xhtml>
+                      </documentation>
+                    </variable>
+                  </outputVars>
+                  <localVars>
+                    <variable name="_CmdStart">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Internal command flags (set by methods)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="_CmdStop">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="_CmdReset">
+                      <type>
+                        <BOOL />
+                      </type>
+                    </variable>
+                    <variable name="MotorRatedHz">
+                      <type>
+                        <REAL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="60.0" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Motor rated frequency</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="AccelTime_s">
+                      <type>
+                        <REAL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="10.0" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Accel time (seconds)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="DecelTime_s">
+                      <type>
+                        <REAL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="10.0" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Decel time (seconds)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="SpeedRamped_Hz">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Speed control</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="RampRate_Hz_per_sec">
+                      <type>
+                        <REAL />
+                      </type>
+                    </variable>
+                    <variable name="Timer_Starting">
+                      <type>
+                        <derived name="TON" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Timers (like Hopper's Timer_LowLevel)</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="Timer_Stopping">
+                      <type>
+                        <derived name="TON" />
+                      </type>
+                    </variable>
+                    <variable name="Timer_AtSpeed">
+                      <type>
+                        <derived name="TON" />
+                      </type>
+                    </variable>
+                    <variable name="Timer_FaultReset">
+                      <type>
+                        <derived name="TON" />
+                      </type>
+                    </variable>
+                    <variable name="RuntimeAccum">
+                      <type>
+                        <REAL />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Runtime tracking</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="FirstScan">
+                      <type>
+                        <BOOL />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TRUE" />
+                      </initialValue>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> First scan</xhtml>
+                      </documentation>
+                    </variable>
+                    <variable name="ScanTime">
+                      <type>
+                        <TIME />
+                      </type>
+                      <initialValue>
+                        <simpleValue value="TIME#100ms" />
+                      </initialValue>
+                    </variable>
+                    <variable name="Trig_Reset">
+                      <type>
+                        <derived name="R_TRIG" />
+                      </type>
+                      <documentation>
+                        <xhtml xmlns="http://www.w3.org/1999/xhtml"> Triggers</xhtml>
+                      </documentation>
+                    </variable>
+                  </localVars>
+                </interface>
+                <body>
+                  <ST>
+                    <xhtml xmlns="http://www.w3.org/1999/xhtml" />
+                  </ST>
+                </body>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>e9d5e115-a3b7-4a77-afdc-f83bce33d765</ObjectId>
+                  </data>
+                </addData>
+              </pou>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+              <Libraries>
+                <Library Name="#IoStandard" Namespace="IoStandard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="true" DefaultResolution="IoStandard, 3.5.17.0 (System)" />
+                <Library Name="#3SLicense" Namespace="_3S_LICENSE" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="3SLicense, 0.0.0.0 (CODESYS)" ResolverGuid="97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b" />
+                <Library Name="#CAA Device Diagnosis" Namespace="DED" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="CAA Device Diagnosis, 3.5.21.0 (CAA Technical Workgroup)" />
+                <Library Name="#Standard" Namespace="Standard" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Standard, * (System)" />
+                <Library Name="#BreakpointLogging" Namespace="BPLog" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="Breakpoint Logging Functions, * (3S - Smart Software Solutions GmbH)" />
+                <Library Name="IecVarAccess3 Interfaces, * (System)" Namespace="IecVarAccess_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="#IecVarAccess" Namespace="IecVarAccessLibrary" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="IecVarAccess, 3.5.17.0 (System)" />
+                <Library Name="#SymbolicVarsBase" Namespace="SymbolicVarsBase" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="SymbolicVarsBase, 3.5.17.0 (System)" />
+                <Library Name="CmpOPCUAStack Interfaces, * (System)" Namespace="CmpOPCUAStack_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="CmpOPCUAServer Interfaces, * (System)" Namespace="CmpOPCUAServer_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="IecVarAccessOpcUaMetaData Interfaces, * (System)" Namespace="IecVarAccessOpcUaMetaData_Interfaces" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" />
+                <Library Name="#AlarmManagerToOpcUaConnector" Namespace="AlarmManagerToOpcUaConnector" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="AlarmManagerToOpcUaConnector, 4.6.0.0 (System)" />
+                <Library Name="#DatasourceAppV3" Namespace="DatasourceAppV3" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="true" LinkAllContent="false" DefaultResolution="Datasource ApplicationV3 Access, 3.5.9.0 (3S - Smart Software Solutions GmbH)" />
+                <Library Name="#Standard64" Namespace="Standard64" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Standard64, * (System)" />
+                <Library Name="#Util" Namespace="Util" HideWhenReferencedAsDependency="false" PublishSymbolsInContainer="false" SystemLibrary="false" LinkAllContent="false" DefaultResolution="Util, * (System)" />
+                <PlaceholderRedirections>
+                  <PlaceholderRedirection Placeholder="Standard" Redirection="Standard, 3.5.18.0 (System)" />
+                  <PlaceholderRedirection Placeholder="Standard64" Redirection="Standard64, 3.5.20.0 (System)" />
+                  <PlaceholderRedirection Placeholder="MemoryBlockManager" Redirection="Memory Block Manager, 3.5.21.0 (CODESYS)" />
+                  <PlaceholderRedirection Placeholder="Util" Redirection="Util, 3.5.21.0 (System)" />
+                  <PlaceholderRedirection Placeholder="StringUtils" Redirection="StringUtils, 3.5.20.0 (System)" />
+                  <PlaceholderRedirection Placeholder="Collections" Redirection="Collections, 3.5.17.0 (System)" />
+                </PlaceholderRedirections>
+                <addData>
+                  <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+                    <ObjectId>a708a376-8b33-494c-8206-debb75a51881</ObjectId>
+                  </data>
+                </addData>
+              </Libraries>
+            </data>
+            <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+              <ObjectId>3879bb97-663c-464d-b0b5-cb3158eb53e5</ObjectId>
+            </data>
+          </addData>
+        </resource>
+        <addData>
+          <data name="Device" handleUnknown="discard">
+            <Device xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">
+              <DeviceType>
+                <DeviceIdentification>
+                  <Type>4096</Type>
+                  <Id>0000 0004</Id>
+                  <Version>3.5.21.10</Version>
+                </DeviceIdentification>
+                <Connector moduleType="256" interface="Common.PCI" connectorId="0">
+                  <HostParameterSet />
+                </Connector>
+                <Connector moduleType="769" interface="SafetyInterface" connectorId="1">
+                  <HostParameterSet />
+                </Connector>
+                <DeviceParameterSet />
+              </DeviceType>
+            </Device>
+          </data>
+          <data name="configurations" handleUnknown="discard">
+            <configurations />
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>f48c55d1-4640-4b04-9c92-6d5533e0b6f4</ObjectId>
+          </data>
+        </addData>
+      </configuration>
+    </configurations>
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="Device" ObjectId="f48c55d1-4640-4b04-9c92-6d5533e0b6f4">
+          <Object Name="Application" ObjectId="3879bb97-663c-464d-b0b5-cb3158eb53e5">
+            <Object Name="Library Manager" ObjectId="a708a376-8b33-494c-8206-debb75a51881" />
+            <Folder Name="Sequencer">
+              <Object Name="Supervisor_PRG" ObjectId="8148c950-a9e9-4955-8d3f-19e1921f48c2" />
+            </Folder>
+            <Object Name="MainTask" ObjectId="1e187980-0ee0-43ea-89f3-3c17415a5d8b" />
+            <Object Name="DatasourcesTask" ObjectId="246b4b49-ec12-43a6-b94c-882a3af539b1" />
+            <Object Name="Global_Variables" ObjectId="056f2025-1fb3-4e7b-9a71-b0418136d2e1" />
+            <Folder Name="Hopper">
+              <Object Name="HopperState" ObjectId="6d75ee61-9837-4ffb-a599-63ec3df223d5" />
+              <Object Name="FB_Hopper" ObjectId="8d5ee0aa-921f-4261-b7df-9ec89e21f0a7" />
+              <Object Name="HopperStatus" ObjectId="7e38909b-e1dc-421f-b287-1db3b520bd81" />
+            </Folder>
+            <Folder Name="Conveyor">
+              <Object Name="ConveyorStatus" ObjectId="b116ffb1-8351-4ac5-9df8-95e15b7d4b6e" />
+              <Object Name="FB_Conveyor" ObjectId="45990637-b69c-49e8-9b2e-c0c93758eb6a" />
+              <Object Name="ConveyorState" ObjectId="b19afefc-9fde-4bbe-b62f-e0dfa80fa76a" />
+            </Folder>
+            <Folder Name="Mixer (VFD)">
+              <Object Name="FB_VFD" ObjectId="e9d5e115-a3b7-4a77-afdc-f83bce33d765" />
+              <Object Name="VFDStatus" ObjectId="4190acd9-7c47-43db-9ee8-4d24d9f1edbb" />
+              <Object Name="VFDState" ObjectId="0b675403-50b0-4863-8c8b-92e0c5b027d1" />
+            </Folder>
+          </Object>
+        </Object>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>
