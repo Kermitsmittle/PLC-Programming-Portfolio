@@ -1,4 +1,4 @@
-# 🕒 Timer_TON – CODESYS TON Delay Simulation
+# Timer_TON – CODESYS TON Delay Simulation
 
 This project demonstrates the use of a **TON (ON-delay) timer** in **Structured Text** using **CODESYS V3.5**.
 
@@ -6,9 +6,9 @@ It’s a basic logic program where a **pushbutton triggers a fan** after a 5-sec
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
-### 📥 Option 1: Project Archive
+### Option 1: Project Archive
 
 1. Download the file:  
    `Timer_TON.projectarchive`
@@ -16,7 +16,7 @@ It’s a basic logic program where a **pushbutton triggers a fan** after a 5-sec
 3. Go to **File → Open Project Archive** and select the file.
 4. Hit **Login**, then **Download**, then **Run (F5)**.
 
-### 💻 Option 2: Raw Project File
+### Option 2: Raw Project File
 
 1. Download `Timer_TON.project3` and open it in CODESYS.
 2. You may need to reassign the **Device**:
@@ -26,7 +26,7 @@ It’s a basic logic program where a **pushbutton triggers a fan** after a 5-sec
 
 ---
 
-## 👀 What You’ll See
+## What You’ll See
 
 - A virtual **pushbutton** in the Visualization tab.
 - When pressed, the **TON** timer starts counting.
