@@ -1,0 +1,3 @@
+
+TYPE ConveyorState :  (OFF, IDLE, ON, JAM_FAULT, MANUAL);
+END_TYPE
