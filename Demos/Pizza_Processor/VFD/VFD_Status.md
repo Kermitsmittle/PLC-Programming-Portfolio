@@ -1,43 +1,43 @@
 # VFD Status Data Structure
 
 '''
-TYPE VFDStatus :
-STRUCT
- //Identification
-    VFD_ID : STRING[20];
-    State : VFDState;
-    Direction : BOOL; //True = Forward , False = Reverse
+ TYPE VFDStatus :
+  STRUCT
+   //Identification
+     VFD_ID : STRING[20];
+     State : VFDState;
+     Direction : BOOL; //True = Forward , False = Reverse
 
-//Speed
-    SpeedSetpoint_Hz  : REAL;
-    Speed_Actual_Hz   : REAL;
+    //Speed
+     SpeedSetpoint_Hz  : REAL;
+     Speed_Actual_Hz   : REAL;
 
     //Status
-    IsRunning : BOOL;
-    IsAtSpeed : BOOL;
-    Ready : BOOL;
+     IsRunning : BOOL;
+     IsAtSpeed : BOOL;
+     Ready : BOOL;
 
     //Alarms
-    Alarm_Active : BOOL;
-    LastFault_Code : INT ;
-    Interlock_Reason : STRING [50];
+     Alarm_Active : BOOL;
+     LastFault_Code : INT ;
+     Interlock_Reason : STRING [50];
 
     //Counters
-    StartCount : UDINT;
-    RunTime_Hours : REAL;
+     StartCount : UDINT;
+     RunTime_Hours : REAL;
 
     //Hardware_DATA
-    Current : REAL;
-    Torque_Percentage : REAL;
+     Current : REAL;
+     Torque_Percentage : REAL;
 
     //Comms
-    Comm_OK : BOOL ;
-    Comms_Fault_Code : INT;
+     Comm_OK : BOOL ;
+     Comms_Fault_Code : INT;
 
     //TimeStamp
-    TimeStamp : TIME;
+     TimeStamp : TIME;
 
-END_STRUCT
-END_TYPE
+  END_STRUCT
+  END_TYPE
 
 '''
