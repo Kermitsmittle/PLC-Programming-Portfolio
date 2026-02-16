@@ -52,7 +52,7 @@ A comprehensive, exam-level simulation of a hospital HVAC system managing airflo
 
 - Expandable and scalable control strategy
 
-Re  al-world relevance to critical medical facilities
+Real-world relevance to critical medical facilities
 
 #### Planned Contents (soon):
 
@@ -60,17 +60,7 @@ Re  al-world relevance to critical medical facilities
 
 - I/O simulation mapping
 
-- Design and logic commentary
-
-- Upcoming Projects
-
-- Conveyor Safety System
-
-- Multi-floor Lift Control
-
-- Industrial Washing Line Automation
-
-- Each future demo will feature:
+ #### Each future demo will feature:
 
 - Wiring logic schematics
 
@@ -78,9 +68,7 @@ Re  al-world relevance to critical medical facilities
 
 - Visualizations when applicable
 
-- Design rationale and reflections
 
-- Collaboration and Challenges
 
 If you have an automation challenge or improvement suggestion, feel free to open an issue or message me on GitHub. Collaborative problem solving is encouraged.
 
