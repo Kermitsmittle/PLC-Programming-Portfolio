@@ -1,6 +1,8 @@
 # VFD Status Data Structure
 
 '''
+The below text are code for structure
+
  TYPE VFDStatus :
   STRUCT
    //Identification
