@@ -1,4 +1,4 @@
-# 🏗️ Bin Tipper Automation – Simulated in CODESYS | Structured Text
+#  Bin Tipper Automation – Simulated in CODESYS | Structured Text
 
 This project implements a **fully automated bin tipping system** using **Structured Text (IEC 61131-3)** and simulated entirely in **CODESYS V3.5**. It recreates the behavior of an industrial bin handling line featuring 3 conveyors, a tipper, sensors, limit switches, and a bin counter.
 
@@ -6,11 +6,11 @@ The logic is written in Structured Text and tested using **CODESYS SoftPLC**, ma
 
 ---
 
-## 🚀 System Overview
+##  System Overview
 
 **Goal:** Automate bin transport and tipping through a chain of conveyors and tipper motor control in a simulated environment.
 
-### 🧩 Components:
+###  Components:
 - **3 Conveyors**: 
   - Conveyor 1 (Infeed)  
   - Conveyor 2 (Post-tip feeder)  
@@ -28,7 +28,7 @@ The logic is written in Structured Text and tested using **CODESYS SoftPLC**, ma
 
 ---
 
-## 🔁 Sequence Logic
+##  Sequence Logic
 
 1. **Bin enters Conveyor 1** → Detected by Sensor 1 → Start Conveyor 1 & increment bin counter
 2. **Bin passes Sensor 2** → Start tipper conveyor
@@ -42,7 +42,7 @@ The logic is written in Structured Text and tested using **CODESYS SoftPLC**, ma
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - **CODESYS V3.5** for development and simulation
 - **Structured Text (IEC 61131-3)** as the primary language
@@ -51,24 +51,24 @@ The logic is written in Structured Text and tested using **CODESYS SoftPLC**, ma
 
 ---
 
-## 📸 Preview
+##  Preview
 
 > _Coming Soon_: Screenshots or GIFs showing the conveyor/tipper sequence in CODESYS simulation.
 
 ---
 
-## 🧠 Author
+##  Author
 
-👤 **Nathanael K Binu**  
-📜 Automation Developer & Controls Enthusiast  
-🔗 [GitHub Portfolio](https://github.com/Kermitsmittle)
+ **Nathanael K Binu**  
+ Automation Developer & Controls Enthusiast  
+ [GitHub Portfolio](https://github.com/Kermitsmittle)
 
 ---
 
-## 🧾 License
+##  License
 
 This project is open-source and available under the MIT License.
 
-> ⚠️ **NOTE:** This project is purely a simulation. No physical PLC hardware is required to run or test the logic.
+>  **NOTE:** This project is purely a simulation. No physical PLC hardware is required to run or test the logic.
 
 ---
