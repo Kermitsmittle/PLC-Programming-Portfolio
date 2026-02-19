@@ -31,10 +31,6 @@ Arithmetic, comparison, edge detection, flip-flops, PID mockups
 
 Modular and reusable code structures
 
-## HVAC System Simulation
-Developed a hospital-grade HVAC system capable of managing 16–20 surgeries/day
-Modular Function Blocks for AHUs, chillers, sensors, fault detection, alarms, and scalability for future expansion
-
 Designed for robustness and reusability across different applications
 
 ## Pizza Manufacturing System
