@@ -2,7 +2,7 @@
 This repository documents my journey into industrial automation and control systems development, with a primary focus on Structured Text (ST) and the CODESYS V3 platform. My work spans foundational logic, process simulations, and real-world automation applications across multiple domains.
 
 # Overview
-Starting from basic timers, counters, and relay logic, my portfolio now includes scalable process control solutions such as HVAC systems, pizza manufacturing lines, and integration with SCADA platforms like VTScada and Ignition. My ultimate goal is to create a comprehensive automation ecosystem that extends across hardware, software, visualization, and cloud layers.
+Starting from basic timers, counters, and relay logic, my portfolio now includes scalable process control solutions such as pizza manufacturing lines. My ultimate goal is to create a comprehensive automation ecosystem that extends across hardware, software, visualization, and cloud layers.
 
 # Tools and Environment
 IDE: CODESYS Development System V3
